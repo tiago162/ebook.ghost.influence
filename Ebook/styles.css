@@ -1,0 +1,148 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: #ffcc00;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #141414, #0d1117);
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #21262d;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #c9d1d9;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Main Section */
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Book Container */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.831);
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.book-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #141414;
+    border-radius: 10px;
+    color: #c9d1d9;
+}
+
+/* Téléchargement */
+.download-section {
+    margin-top: 20px;
+}
+
+.download-btn {
+    background: linear-gradient(45deg, #f0e68c, #ffcc00);
+    color: #121212;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #ffcc00, #f0e68c);
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
+}
+
+.download-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(255, 204, 0, 0.3);
+}
+
+
+/* Footer */
+footer {
+    background: #141414;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    color: #8b949e;
+}
